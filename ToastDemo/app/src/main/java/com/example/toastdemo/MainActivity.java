@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Log.i("Info", "Do enter name executed");
         EditText nameEditText = findViewById(R.id.nameEditText);
 
-        Toast.makeText(MainActivity.this, "Hi there, " + nameEditText.getText().toString(), Toast.LENGTH_LONG);
+        Toast.makeText(MainActivity.this, "Hi there, " + nameEditText.getText().toString(), Toast.LENGTH_LONG).show();
 
     }
 }
