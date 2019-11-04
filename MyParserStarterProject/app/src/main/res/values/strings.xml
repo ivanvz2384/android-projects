@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Parser Starter Project</string>
+    <string name="back4app_server_url">http://3.133.90.70:80/parse/</string>
+    <string name="back4app_app_id">23c513333c95b130d8d6f547e05be35b4d74bad6</string>
+    <string name="back4app_client_key">0ae8d989064200d39c190ce09847f0f3822c2cac</string>
+
+</resources>
