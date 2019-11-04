@@ -22,8 +22,6 @@ public class StarterApplication extends Application {
         // Enable Local Datastore.
         Parse.enableLocalDatastore(this);
 
-        ParseObject object = new ParseObject("ExampleObject");
-
         // Add your initialization code here
         Parse.initialize(new Parse.Configuration.Builder(getApplicationContext())
                 .applicationId("23c513333c95b130d8d6f547e05be35b4d74bad6")
@@ -32,7 +30,8 @@ public class StarterApplication extends Application {
                 .build()
         );
 
-
+        /*
+        ParseObject object = new ParseObject("ExampleObject");
         object.put("myNumber", "123");
         object.put("myString", "rob");
 
@@ -46,9 +45,9 @@ public class StarterApplication extends Application {
                 }
             }
         });
+        */
 
-
-        ParseUser.enableAutomaticUser();
+        //ParseUser.enableAutomaticUser();
 
         ParseACL defaultACL = new ParseACL();
         defaultACL.setPublicReadAccess(true);
