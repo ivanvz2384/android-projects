@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -85,6 +86,7 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
         locationListener = new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
+
                 updateMap(location);
             }
 
@@ -184,5 +186,11 @@ public class RiderActivity extends FragmentActivity implements OnMapReadyCallbac
         }
 
 
+    }
+
+    public void logout(View view) {
+        ParseUser.logOut();
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent);
     }
 }
